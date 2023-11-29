@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Section</title>
+    <style>
+      #mySection {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Section to Show/Hide</h2>
+
+    <!-- Your section content -->
+    <div id="mySection">
+      <p>This is the content of the section.</p>
+      <!-- Add more elements as needed -->
+    </div>
+
+    <!-- Buttons to show and hide the section -->
+    <button id="showBtn">Show Section</button>
+    <button id="hideBtn">Hide Section</button>
+
+    <script>
+      // JavaScript functions to show and hide the section
+      document.getElementById("showBtn").addEventListener("click", showSection);
+      document.getElementById("hideBtn").addEventListener("click", hideSection);
+
+      function showSection() {
+        document.getElementById("mySection").style.display = "block";
+      }
+
+      function hideSection() {
+        document.getElementById("mySection").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
